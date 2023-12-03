@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+     
+    </style>
+  </head>
+
+  <body class="">
+    <div class="jumbotron alert alert-danger text-center">TIMI Risk Score by using Basic Javascript  </div><!--div jumbotron-->
+    <div class="container">
+      <div class="alert alert-info" role="alert">
+In this page, you can calculate your patients TIMI Score!</div>
+      
+          
+       <div class="row">
+          
+         <div class="col md-12">
+              <div class="card">
+                 <div class="card-header text-white bg-info">TIMI Risk Score</div>
+                 <div class="card-body bg-light">
+                   <form class="form-group">
+                     <table class="table ">
+                       <tr>
+                         <td><label for="">Age ≥65</label></td>
+                         <td><input type="radio" value="yes" name="age_" class="form-action" id="age_" required> Yes
+                         <td><input type="radio" value="no" name="age_" class="form-action" id="age_"> No</td>
+                       </tr>
+                        <tr>
+                         <td><label for="">≥3 CAD risk factors <br><small>Hypertension, hypercholesterolemia, diabetes, family history of CAD, or current smoker</small></label></td>
+                         <td><input type="radio" value="yes" name="rf_" class="form-action" id="rf_" required> Yes</td>
+                         <td><input type="radio" value="no" name="rf_" class="form-action" id="rf_"> No</td>
+                       </tr>
+                        <tr>
+                         <td><label for="">Known CAD (stenosis ≥50%)</label></td>
+                         <td><input type="radio" value="yes" name="cad_" class="form-action" id="cad_" required> Yes</td>
+                         <td><input type="radio" value="no" name="cad_" class="form-action" id="cad_"> No</td>
+                       </tr>
+                       <tr>
+                         <td><label for="">ASA use in past 7 days</label></td>
+                         <td><input type="radio" value="yes" name="asa_" class="form-action" id="asa_" required> Yes</td>
+                         <td><input type="radio" value="no" name="asa_" class="form-action" id="asa_"> No</td>
+                       </tr>
+                        <tr>
+                         <td><label for="">Severe angina (≥2 episodes in 24 hrs)
+</label></td>
+                         <td><input type="radio" value="yes" name="ang_" class="form-action" id="ang_" required> Yes</td>
+                         <td><input type="radio" value="no" name="ang_" class="form-action" id="ang_"> No</td>
+                       </tr>
+                        <tr>
+                         <td><label for="">EKG ST changes ≥0.5mm</label>
+</td>
+                         <td><input type="radio" value="yes" name="ecg_" class="form-action" id="ecg_" required> Yes</td>
+                         <td><input type="radio" value="no" name="ecg_" class="form-action""ecg_"> No</td>
+                       </tr>
+                       <tr>
+                         <td><label for="">Positive cardiac marker
+</label>
+</td>
+                         <td><input type="radio" value="yes" name="marker_" class="form-action" id="marker_" required> Yes</td>
+                         <td><input type="radio" value="no" name="marker_" class="form-action" id="marker_"> No</td>
+                       </tr>
+                       <tr>
+                         <td colspan="3"><button type="button" class="btn btn-primary" onclick="timiScore()">CALCULATE THE SCORE</button><br></td>
+                         
+                       </tr>
+                       
+                       <tr>
+                         <td colspan="3"><div class="alert alert-info" role="alert" id="pointArea">Score will go here!
+  
+</div><div class="alert alert-info" role="alert" id="infoArea">Info will go here!
+  
+</div>
+                         </td>
+                         
+                       </tr>
+
+                       
+                      
+
+
+
+
+
+                     </table>
+                      
+     
+                     
+                   </form>
+                </div><!--div card body-->
+              </div><!--div card-->
+          </div><!--div col md-6--> 
+      </div><!--div row-->
+      
+      
+      
+      
+      
+      
+    </div><!--div container-->
+
+
+
+
+
+
+    <script>
+
+    </script>
+  </body>
+</html>
